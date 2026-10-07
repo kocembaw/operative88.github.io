@@ -15,10 +15,6 @@ theme = 'PaperMod'
     name = "email"
     url = "wojciechkocemba21@gmail.com"
 
-[[menu.main]]
-  name = "Blog"
-  url = "/posts/"
-  weight = 10
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

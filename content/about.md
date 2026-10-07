@@ -3,7 +3,7 @@ title: About
 layout: hero
 ---
 
-I am mainly interested in Cloud Computing, DevOps, and Neuromodulation. Combining these fields is what I am currently focused on.
+I am mainly interested in Cloud Computing and DevOps. Combining these fields is what I am currently focused on.
 
 ---
 
