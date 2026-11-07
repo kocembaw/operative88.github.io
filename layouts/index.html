@@ -6,7 +6,7 @@
   <title>Wojciech Kocemba</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400&family=VT323&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
@@ -39,18 +39,30 @@
     .socials a:hover { opacity: 1; transform: translateY(-2px); }
     .socials svg { width: 30px; height: 30px; fill: currentColor; display: block; }
     .hero-center {
-      flex: 1; display: flex; flex-direction: column;
-      align-items: center; justify-content: center; text-align: center;
-      padding: 2rem 1.5rem 10rem;
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 2rem 2rem 8rem;
     }
-    .hero-center h1 {
-      font-size: clamp(1.8rem, 5vw, 3.4rem); font-weight: 500;
-      letter-spacing: -0.01em; line-height: 1.05;
+    .intro {
+      display: flex; align-items: flex-start; gap: 2.4rem;
+      max-width: 70rem;
+      font-family: 'Literata', Georgia, serif; font-weight: 400;
+      font-size: clamp(1rem, 1.35vw, 1.15rem); line-height: 1.6;
     }
-    .tagline { margin-top: 1rem; font-size: clamp(1.05rem, 3vw, 1.7rem); font-weight: 300; opacity: 0.95; }
+    .intro p { flex: 1 1 0; }
+    .intro .lead { text-align: left; flex-grow: 1.35; }
+    .intro .aside { text-align: left; margin-top: 3.2em; }
+    .intro .divider { flex: 0 0 1px; align-self: stretch; background: #2f2d29; margin: 1.6em 0; }
+    .intro a {
+      color: inherit; text-decoration: underline; text-decoration-color: #ece8dd80;
+      text-underline-offset: 4px; text-decoration-thickness: 1px; transition: text-decoration-color 0.2s ease;
+    }
+    .intro a:hover { text-decoration-color: #ece8dd; }
     @media (max-width: 640px) {
       .topbar { justify-content: center; text-align: center; padding: 1.2rem; }
       .nav { justify-content: center; gap: 1rem; }
+      .intro { flex-direction: column; gap: 1.4rem; }
+      .intro .aside { margin-top: 0; }
+      .intro .divider { flex: 0 0 auto; align-self: auto; width: 3rem; height: 1px; margin: 0; }
     }
     @media (prefers-reduced-motion: no-preference) {
       .hero-center { animation: fade-up 0.9s ease both; }
@@ -77,8 +89,12 @@
       </nav>
     </header>
     <div class="hero-center">
-      <h1>Wojciech Kocemba</h1>
-      <p class="tagline">Cloud Computing · DevOps</p>
+      <div class="intro">
+        <p class="lead">Having working on infrastructure and tooling have teached me many things;<br>
+        primarily: I have the benefit of never having learned all the reasons things are considered “impossible”.</p>
+        <span class="divider" aria-hidden="true"></span>
+        <p class="aside">I have only made this letter longer because I have not had the time to make it shorter: <a href="/projects/">a page with an overview of my projects</a></p>
+      </div>
     </div>
   </div>
 </body>
