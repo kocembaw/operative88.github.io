@@ -9,33 +9,32 @@
     html, body { min-height: 100%; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #ffffff; -webkit-font-smoothing: antialiased;
+      color: #ece8dd; -webkit-font-smoothing: antialiased;
     }
     .page {
       min-height: 100vh;
-      background: linear-gradient(rgba(6,20,45,0.20), rgba(6,20,45,0.35)), url('/images/hero.jpg');
-      background-size: cover; background-position: center; background-attachment: fixed;
+      background: #12110e;
     }
     .topbar {
       display: flex; align-items: center; justify-content: space-between;
       flex-wrap: wrap; gap: 1rem 1.5rem; padding: 1.6rem 2.2rem;
+      border-bottom: 1px solid #2f2d29;
     }
-    .brand { font-size: 0.95rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #fff; text-decoration: none; }
+    .brand { font-size: 0.95rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #ece8dd; text-decoration: none; }
     .nav { display: flex; align-items: center; flex-wrap: wrap; gap: 1.4rem; }
-    .nav a.link { color: #fff; text-decoration: none; font-size: 1.05rem; opacity: 0.92; transition: opacity 0.2s ease; }
+    .nav a.link { color: #ece8dd; text-decoration: none; font-size: 1.05rem; opacity: 0.92; transition: opacity 0.2s ease; }
     .nav a.link:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
     .socials { display: flex; align-items: center; gap: 1rem; margin-left: 0.4rem; }
-    .socials a { color: #fff; opacity: 0.9; display: inline-flex; transition: opacity 0.2s ease, transform 0.2s ease; }
+    .socials a { color: #ece8dd; opacity: 0.9; display: inline-flex; transition: opacity 0.2s ease, transform 0.2s ease; }
     .socials a:hover { opacity: 1; transform: translateY(-2px); }
     .socials svg { width: 26px; height: 26px; fill: currentColor; display: block; }
     .content-wrap { padding: 1.5rem 1.5rem 5rem; display: flex; justify-content: center; }
     .card {
       width: 100%; max-width: 640px;
-      background: rgba(8,28,58,0.55);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: #12110e;
+      border: 1px solid #2f2d29;
       border-radius: 16px;
       padding: 2.6rem 3rem 3rem;
-      backdrop-filter: blur(2px);
     }
     .page-title {
       font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 300; line-height: 1.1;
@@ -48,12 +47,12 @@
     .prose a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .prose ul { list-style: none; padding: 0; margin: 0 0 1.2rem; }
     .prose li { position: relative; padding-left: 1.4rem; margin: 0 0 0.9rem; }
-    .prose li::before { content: "•"; position: absolute; left: 0; color: #eaf1fb; }
-    .prose hr { border: none; border-top: 1px solid #ffffff; margin: 1.6rem 0; }
+    .prose li::before { content: "•"; position: absolute; left: 0; color: #ece8dd; }
+    .prose hr { border: none; border-top: 1px solid #2f2d29; margin: 1.6rem 0; }
     .prose h2, .prose h3 { font-weight: 400; margin: 1.6rem 0 0.8rem; }
     .prose img { display: block; max-width: 100%; height: auto; margin: 0 auto 1.2rem; border-radius: 8px; }
     .contact-socials { display: flex; gap: 1.4rem; margin-top: 0.6rem; }
-    .contact-socials a { color: #fff; opacity: 0.92; display: inline-flex; transition: opacity 0.2s ease, transform 0.2s ease; }
+    .contact-socials a { color: #ece8dd; opacity: 0.92; display: inline-flex; transition: opacity 0.2s ease, transform 0.2s ease; }
     .contact-socials a:hover { opacity: 1; transform: translateY(-2px); }
     .contact-socials svg { width: 34px; height: 34px; fill: currentColor; display: block; }
     @media (max-width: 640px) {
