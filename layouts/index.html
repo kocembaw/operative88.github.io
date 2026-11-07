@@ -98,5 +98,21 @@
       </div>
     </div>
   </div>
+  <script>
+    (function () {
+      var lead = document.querySelector('.intro .lead');
+      var aside = document.querySelector('.intro .aside');
+      if (!lead || !aside) return;
+      var mobile = window.matchMedia('(max-width: 640px)');
+      function align() {
+        if (mobile.matches) { aside.style.marginTop = ''; return; }
+        var lh = parseFloat(getComputedStyle(lead).lineHeight);
+        aside.style.marginTop = Math.max(0, lead.offsetHeight - lh) + 'px';
+      }
+      align();
+      window.addEventListener('resize', align);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(align);
+    })();
+  </script>
 </body>
 </html>
