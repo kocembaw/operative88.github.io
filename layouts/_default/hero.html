@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }} · {{ .Site.Title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { min-height: 100%; }
@@ -22,7 +25,7 @@
     }
     .brand { font-size: 0.95rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #ece8dd; text-decoration: none; }
     .nav { display: flex; align-items: center; flex-wrap: wrap; gap: 1.4rem; }
-    .nav a.link { color: #ece8dd; text-decoration: none; font-size: 1.05rem; opacity: 0.92; transition: opacity 0.2s ease; }
+    .nav a.link { color: #ece8dd; text-decoration: none; font-family: 'VT323', monospace; font-size: 1.35rem; opacity: 0.92; transition: opacity 0.2s ease; }
     .nav a.link:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
     .socials { display: flex; align-items: center; gap: 1rem; margin-left: 0.4rem; }
     .socials a { color: #ece8dd; opacity: 0.9; display: inline-flex; transition: opacity 0.2s ease, transform 0.2s ease; }
