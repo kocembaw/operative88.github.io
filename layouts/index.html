@@ -44,13 +44,13 @@
     }
     .intro {
       display: flex; align-items: flex-start; gap: 2.4rem;
-      max-width: 70rem;
+      max-width: 100%;
       font-family: 'Literata', Georgia, serif; font-weight: 400;
       font-size: clamp(1.1rem, 1.5vw, 1.28rem); line-height: 1.6;
     }
-    .intro p { flex: 1 1 0; }
-    .intro .lead { text-align: left; flex-grow: 1.35; }
-    .intro .aside { text-align: left; margin-top: 3.2em; }
+    .intro p { min-width: 0; }
+    .intro .lead { text-align: left; flex: 0 1 32em; }
+    .intro .aside { text-align: left; flex: 0 1 25em; margin-top: 3.2em; }
     .intro .divider { flex: 0 0 1px; align-self: stretch; background: #2f2d29; margin: 1.6em 0; }
     .intro a {
       color: inherit; text-decoration: underline; text-decoration-color: #ece8dd80;
