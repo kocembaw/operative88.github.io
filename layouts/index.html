@@ -104,8 +104,24 @@
       var aside = document.querySelector('.intro .aside');
       if (!lead || !aside) return;
       var mobile = window.matchMedia('(max-width: 640px)');
+      function textRight(el) {
+        var r = document.createRange(); r.selectNodeContents(el);
+        var rects = r.getClientRects(), max = 0;
+        for (var i = 0; i < rects.length; i++) if (rects[i].width > 0) max = Math.max(max, rects[i].right);
+        return max;
+      }
       function align() {
-        if (mobile.matches) { aside.style.marginTop = ''; return; }
+        // reset to the natural layout first, so line breaks are computed as before
+        [lead, aside].forEach(function (el) { el.style.flex = ''; el.style.width = ''; });
+        aside.style.marginTop = '';
+        if (mobile.matches) return;
+        // shrink the left column to its widest line (same line breaks), keep the right one as is,
+        // so the divider sits equally far from both texts
+        var leadW = textRight(lead) - lead.getBoundingClientRect().left + 0.1;
+        var asideW = aside.getBoundingClientRect().width;
+        lead.style.flex = '0 0 auto'; lead.style.width = leadW + 'px';
+        aside.style.flex = '0 0 auto'; aside.style.width = asideW + 'px';
+        // first line on the right starts at the height of the last line on the left
         var lh = parseFloat(getComputedStyle(lead).lineHeight);
         aside.style.marginTop = Math.max(0, lead.offsetHeight - lh) + 'px';
       }
