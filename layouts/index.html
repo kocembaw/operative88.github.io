@@ -48,6 +48,12 @@
       font-family: 'Literata', Georgia, serif; font-weight: 400;
       font-size: clamp(1.1rem, 1.5vw, 1.28rem); line-height: 1.6;
     }
+    .intro { position: relative; }
+    /* square picture above-left of the text: its right edge lines up with where the text starts */
+    .intro-img {
+      position: absolute; right: 100%; bottom: 100%; margin-bottom: 2em;
+      width: 11em; height: 11em; object-fit: cover; display: block;
+    }
     .intro p { min-width: 0; }
     .intro .lead { text-align: left; flex: 0 1 32em; }
     .intro .aside { text-align: left; flex: 0 1 25em; margin-top: 3.2em; }
@@ -61,8 +67,10 @@
       .topbar { justify-content: center; text-align: center; padding: 1.2rem; }
       .nav { justify-content: center; gap: 1rem; }
       .intro { flex-direction: column; gap: 1.4rem; }
+      .intro .lead, .intro .aside { flex: none; }
       .intro .aside { margin-top: 0; }
       .intro .divider { flex: 0 0 auto; align-self: auto; width: 3rem; height: 1px; margin: 0; }
+      .intro-img { position: static; width: 7rem; height: 7rem; margin: 0; }
     }
     @media (prefers-reduced-motion: no-preference) {
       .hero-center { animation: fade-up 0.9s ease both; }
@@ -90,6 +98,7 @@
     </header>
     <div class="hero-center">
       <div class="intro">
+        <img class="intro-img" src="/images/spiral.jpg" alt="" width="600" height="600">
         <p class="lead">Working on infrastructure and tooling has taught me many things;<br>
         primarily, I have the benefit of never having learned all the reasons things are considered ‘impossible’.</p>
         <span class="divider" aria-hidden="true"></span>
@@ -124,9 +133,27 @@
         // first line on the right starts at the height of the last line on the left
         var lh = parseFloat(getComputedStyle(lead).lineHeight);
         aside.style.marginTop = Math.max(0, lead.offsetHeight - lh) + 'px';
+        placeImage();
+      }
+      var img = document.querySelector('.intro-img');
+      var intro = document.querySelector('.intro');
+      var topbar = document.querySelector('.topbar');
+      function placeImage() {
+        if (!img) return;
+        img.style.width = ''; img.style.height = ''; img.style.display = '';
+        if (mobile.matches) return;
+        // as large as 11em, but never running into the page edge or the menu bar
+        var fs = parseFloat(getComputedStyle(intro).fontSize);
+        var ir = intro.getBoundingClientRect();
+        var hb = topbar.getBoundingClientRect().bottom;
+        var size = Math.min(11 * fs, ir.left - 24, ir.top - 2 * fs - hb - 24);
+        if (size < 96) { img.style.display = 'none'; return; }
+        img.style.width = size + 'px'; img.style.height = size + 'px';
       }
       align();
       window.addEventListener('resize', align);
+      var center = document.querySelector('.hero-center');
+      if (center) center.addEventListener('animationend', align);
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(align);
     })();
   </script>
