@@ -3,14 +3,14 @@ title: SNPedia Knowledge Exporter
 layout: hero
 ---
 
-This is a custom Prometheus exporter written in Python that collects statistics about SNPedia, a wiki about human genetic variation, through the MediaWiki Action API. The exporter, Prometheus and Grafana are deployed to a single virtual machine with one Ansible playbook.
+this is a custom prometheus exporter written in python that collects statistics about snpedia, a wiki about human genetic variation, through the mediawiki action api. the exporter, prometheus and grafana are deployed to a single virtual machine with one ansible playbook.
 
-Once deployed, the exporter fetches data from SNPedia in the background every 30 minutes and exposes it on /metrics. Prometheus scrapes these metrics and evaluates alerting rules, while Grafana shows how many SNPs, genes and conditions the wiki describes, how actively it is edited, and how many days have passed since the last change. Because /metrics only serves cached values, Prometheus scrapes never generate traffic to SNPedia.
+once deployed, the exporter fetches data from snpedia in the background every 30 minutes and exposes it on /metrics. prometheus scrapes these metrics and evaluates alerting rules, while grafana shows how many snps, genes and conditions the wiki describes, how actively it is edited, and how many days have passed since the last change. because /metrics only serves cached values, prometheus scrapes never generate traffic to snpedia.
 
-## Architecture
+## architecture
 
-![Architecture diagram of the SNPedia Knowledge Exporter](/images/snpedia-architecture.png)
+![architecture diagram of the snpedia knowledge exporter](/images/snpedia-architecture.png)
 
-Source code: [github.com/kocembaw/SNPedia-Grafana](https://github.com/kocembaw/SNPedia-Grafana)
+source code: [github.com/kocembaw/snpedia-grafana](https://github.com/kocembaw/SNPedia-Grafana)
 
-[← Back to projects](/projects/)
+[← back to projects](/#projects)
