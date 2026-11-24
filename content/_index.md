@@ -2,11 +2,9 @@
 title: Wojciech Kocemba
 ---
 
-my name is wojciech kocemba and i'm a computer science student interested in cloud computing and devops.
+my name is wojciech kocemba and i’m currently a third-year student of computer science in engineering at agh university of krakow, and the secretary of the agh analytica student research club.
 
 ## work
-
-i'm currently a third-year student of computer science in engineering at agh university of krakow, and the secretary of the agh analytica student research club.
 
 i'm mainly interested in cloud computing and devops; combining these fields is what i'm currently focused on.
 
