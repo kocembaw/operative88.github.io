@@ -17,7 +17,7 @@ working on infrastructure and tooling has taught me many things; primarily, i ha
 
 most of the (public) code i write these days is on [github](https://github.com/kocembaw)
 
-## some other parts of the internet you might be interested in
+## you might be interested in
 
 - [no tool is omnicompetent. there is no such thing as a master-key that will unlock all doors](https://en.wikipedia.org/wiki/A_Study_of_History)
 - [to achieve better results than others, you have to look at things differently and more deeply than the crowd](https://books.google.pl/books/about/The_Most_Important_Thing.html?id=QSVlDwAAQBAJ&source=kp_book_description&redir_esc=y)
