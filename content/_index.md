@@ -20,7 +20,7 @@ most of the (public) code i write these days is on [github](https://github.com/k
 ## you might be interested in
 
 - [no tool is omnicompetent. there is no such thing as a master-key that will unlock all doors](https://en.wikipedia.org/wiki/A_Study_of_History)
-- [to achieve better results than others, you have to look at things differently and more deeply than the crowd](https://books.google.pl/books/about/The_Most_Important_Thing.html?id=QSVlDwAAQBAJ&source=kp_book_description&redir_esc=y)
+- [you have to look at things differently and more deeply than the crowd](https://books.google.pl/books/about/The_Most_Important_Thing.html?id=QSVlDwAAQBAJ&source=kp_book_description&redir_esc=y)
 - [you make money by holding a well-reasoned view that clearly differs from the majority opinion. to do this, you gather information or draw conclusions that others do not have](https://en.wikipedia.org/wiki/Michael_Steinhardt)
 
 ## contact
