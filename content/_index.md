@@ -6,7 +6,7 @@ my name is wojciech kocemba and i’m currently a third-year student of computer
 
 ## work
 
-i'm mainly interested in cloud computing and devops; combining these fields is what i'm currently focused on.
+i’m mainly interested in sre / devops.
 
 working on infrastructure and tooling has taught me many things; primarily, i have the benefit of never having learned all the reasons things are considered ‘impossible’.
 
