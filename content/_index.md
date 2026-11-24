@@ -20,7 +20,7 @@ most of the (public) code i write these days is on [github](https://github.com/k
 ## you might be interested in
 
 - [no tool is omnicompetent. there is no such thing as a master-key that will unlock all doors](https://en.wikipedia.org/wiki/A_Study_of_History)
-- [you make money by holding a well-reasoned view that clearly differs from the majority opinion. to do this, you gather information or draw conclusions that others do not have](https://en.wikipedia.org/wiki/Michael_Steinhardt)
+- [you make money by gathering information that most people do not have](https://en.wikipedia.org/wiki/Michael_Steinhardt)
 
 ## contact
 
