@@ -21,6 +21,7 @@ most of the (public) code i write these days is on [github](https://github.com/k
 
 - [no tool is omnicompetent. there is no such thing as a master-key that will unlock all doors](https://en.wikipedia.org/wiki/A_Study_of_History)
 - [you make money by gathering information that most people do not have](https://en.wikipedia.org/wiki/Michael_Steinhardt)
+- [effective interventions can be surprising, and at first they may even seem harmful](https://people.duke.edu/~ng46/meteorites/nc-meteorites/forrester_counterintuitive.pdf)
 
 ## contact
 
