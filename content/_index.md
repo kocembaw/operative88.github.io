@@ -2,7 +2,7 @@
 title: Wojciech Kocemba
 ---
 
-my name is wojciech kocemba and i’m currently a third-year student of computer science in engineering at agh university of krakow, and the secretary of the agh analytica student research club.
+my name is wojciech kocemba and i’m currently a third-year student of computer science in engineering at agh university of krakow.
 
 ## work
 
