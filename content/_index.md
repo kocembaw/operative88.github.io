@@ -8,7 +8,7 @@ my name is wojciech kocemba and i’m currently a third-year student of computer
 
 i’m mainly interested in sre / devops.
 
-working on infrastructure and tooling has taught me many things; primarily, i have the benefit of never having learned all the reasons things are considered ‘impossible’.
+working on infrastructure and tooling has taught me that i have the benefit of never having learned all the reasons things are considered ‘impossible’.
 
 ## links with more detailed project descriptions {#projects}
 
