@@ -25,5 +25,5 @@ the code behind the projects can be found on [github](https://github.com/kocemba
 
 ## contact
 
-- [wojciechkocemba21@gmail.com](mailto:wojciechkocemba21@gmail.com)
+- wojciech.ops(at)gmail.com
 - [linkedin](https://www.linkedin.com/in/wkocemba21)
